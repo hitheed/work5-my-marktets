@@ -1,0 +1,17 @@
+<template>
+  <svg :width="width" :height="height" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path class="strokedPath" d="M5.16807 4.49705L12.8781 0.608378C13.5346 0.271696 14.3258 0.557876 14.6457 1.24807L16.1607 4.49705M2.44094 4.49705H18.4838C19.578 4.49705 20.4534 5.38926 20.4534 6.46664V15.9947C20.4534 17.089 19.5612 17.9643 18.4838 17.9643H2.44094C1.34673 17.9643 0.471355 17.0721 0.471355 15.9947V6.46664C0.471355 5.37243 1.36356 4.49705 2.44094 4.49705ZM20.4703 9.47994H16.3122C15.3527 9.47994 14.5615 10.2711 14.5615 11.2307C14.5615 12.2071 15.3527 12.9814 16.3122 12.9814H20.4703V9.46311V9.47994ZM16.1776 10.8098C16.4132 10.8098 16.5984 10.995 16.5984 11.2307C16.5984 11.4664 16.4132 11.6515 16.1776 11.6515C15.9419 11.6515 15.7567 11.4664 15.7567 11.2307C15.7567 10.995 15.9419 10.8098 16.1776 10.8098Z" stroke-width="0.942709" stroke-miterlimit="22.9256"/>
+  </svg>
+</template>
+
+<script lang="ts">
+import { Component, Prop, Vue } from 'vue-property-decorator';
+
+@Component
+export default class WalletIcon extends Vue {
+  @Prop({ default: 21 }) width!: number;
+  @Prop({ default: 19 }) height!: number;
+}
+</script>
+
+<style lang="scss" scoped></style>
